@@ -235,8 +235,8 @@ var isNotAFriend = findPotentialFriends( friends );
 method, find all potential second level friends as well as potential friends
 from allUsers. */
 
-var potentialSecondLevelFriends = "?";
-var allPotentialFriends = "?";
+var potentialSecondLevelFriends = secondLevelFriends.filter(isNotAFriend);
+var allPotentialFriends = allUsers.filter(isNotAFriend);
 
 
 /******************************************************************************\
@@ -263,7 +263,7 @@ function timeOutCounter() {
   for (var i = 0; i <= 5; i++) {
     setTimeout(function() {
     	console.log(i)
-	}, i * 1000)
+	  }, i * 1000)
   }
 }
 timeOutCounter();
