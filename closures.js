@@ -48,7 +48,9 @@ function callFriend(name) {
 Create a callJake function that when invoked with '435-555-9248' returns 'Calling Jake at 435-555-9248'
 in your console. */
 
-  //Code Here
+let callJake = callFriend('Jake')
+callJake('435-555-9248');
+ 
 
 
 
