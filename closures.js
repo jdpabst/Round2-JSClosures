@@ -106,20 +106,22 @@ http://stackoverflow.com/questions/17776940/javascript-module-pattern-with-examp
 */
 
 function counterFactory(value) {
-
-  // Code here.
-
-
   return {
+    inc: function(){
+      return value += 1;
+    },
+    dec: function(){
+      return value -= 1;
+    }
   }
 }
 
 
 counter = counterFactory(10);
-// counter.inc() // 11
-// counter.inc() // 12
-// counter.inc() // 13
-// counter.dec() // 12
+counter.inc() // 11
+counter.inc() // 12
+counter.inc() // 13
+counter.dec() // 12
 
 
 
