@@ -14,11 +14,13 @@ function outer() {
 closure over the name variable. Invoke outer saving the return value into
 another variable called 'inner'. */
 
-// Code Here
+let inner = outer();
 
 //Once you do that, invoke inner.
 
 //Code Here
+inner();
+console.log(inner());
 
 
 
